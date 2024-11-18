@@ -1,0 +1,66 @@
+---
+title: "Unit Testing"
+subtitle: RUM-UMC meeting
+date: '2024-11-20'
+format: revealjs
+author: 'Thomas Pronk'
+---
+
+
+# Outline
+- Introduction into unit testing
+- Four demos of increasing sophistication
+- Course materials via RUM-UMC website
+
+
+# What is a unit test?
+- Test: validate expected behavior
+- Unit: on a small scale
+
+
+# Familiar kinds of "unit tests"
+- Syntax errors 
+- Errors and warnings (exceptions)
+- Semantic errors
+
+`demos/demo-1-built-in-testing.R`
+
+
+# Vanilla unit testing
+- Testing code against an expectation
+
+`demos/demo-2-vanilla.R`
+
+
+# Unit testing via `testthat`
+- Standard way of describing tests
+- Nicer error messages
+- Integration into RStudio
+
+`demos/demo-3-testthat.R`
+
+
+# Test all kinds of expectations
+- See [expectations](https://testthat.r-lib.org/reference/index.html#expectations)
+- (illustrate via `expect_warning()`)
+
+
+# Put test in separate file
+Don't have tests clog up the script unnecessarily.
+
+`demo-4-duck.R`
+
+`test-demo-4-duck.R`
+
+
+# Do more with your tests
+Run tests... 
+
+- On virtual Linux, Mac, Windows... ([winbuilder](https://win-builder.r-project.org/), [R-hub v2](https://blog.r-hub.io/2024/04/11/rhub2/))
+- Whenever you save a file ([testthat::auto_test](https://testthat.r-lib.org/reference/auto_test.html))
+- When you build a package (RStudio: Build -> Test Package)
+
+
+# Thank you
+
+Space for questions, discussion, deep dives
